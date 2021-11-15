@@ -62,6 +62,36 @@ $selectionColor: #dcdfe4;
 // Change text colors against light slide backgrounds
 @include light-bg-text-color(#282c34);
 
+
 // Theme template ------------------------------
 @import "../template/theme";
 // ---------------------------------------------
+
+
+// ---------------------------
+// Override color of fragments
+// ---------------------------
+$redcolor: #e06c75;
+$greencolor: #98c379;
+$bluecolor: #61afef;
+
+.reveal .slides section .fragment.highlight-red.visible {
+	color: $redcolor;
+}
+.reveal .slides section .fragment.highlight-green.visible {
+	color: $greencolor;
+}
+.reveal .slides section .fragment.highlight-blue.visible {
+	color: $bluecolor;
+}
+
+.reveal .slides section .fragment.highlight-current-red.current-fragment {
+	color: $redcolor;
+}
+.reveal .slides section .fragment.highlight-current-green.current-fragment {
+	color: $greencolor;
+}
+.reveal .slides section .fragment.highlight-current-blue.current-fragment {
+	color: $bluecolor;
+}
+

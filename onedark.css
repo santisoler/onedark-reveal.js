@@ -299,3 +299,21 @@ section.has-light-background, section.has-light-background h1, section.has-light
 @media print {
   .backgrounds {
     background-color: var(--r-background-color); } }
+
+.reveal .slides section .fragment.highlight-red.visible {
+  color: #e06c75; }
+
+.reveal .slides section .fragment.highlight-green.visible {
+  color: #98c379; }
+
+.reveal .slides section .fragment.highlight-blue.visible {
+  color: #61afef; }
+
+.reveal .slides section .fragment.highlight-current-red.current-fragment {
+  color: #e06c75; }
+
+.reveal .slides section .fragment.highlight-current-green.current-fragment {
+  color: #98c379; }
+
+.reveal .slides section .fragment.highlight-current-blue.current-fragment {
+  color: #61afef; }
