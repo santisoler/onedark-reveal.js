@@ -1,0 +1,67 @@
+/**
+* Onedark theme for reveal.js.
+*
+*/
+
+
+// Default mixins and settings -----------------
+@import "../template/mixins";
+@import "../template/settings";
+// ---------------------------------------------
+
+
+// -------------------------------------------------------
+// Override theme settings (see ../template/settings.scss)
+// -------------------------------------------------------
+
+// Include theme-specific fonts
+@import url(./fonts/source-sans-pro/source-sans-pro.css);
+
+// Background of the presentation
+$backgroundColor: #282c34;
+
+// Primary/body text
+$mainFont: 'Source Sans Pro', Helvetica, sans-serif;
+$mainFontSize: 42px;
+$mainColor: #dcdfe4;
+
+// Vertical spacing between blocks of text
+$blockMargin: 20px;
+
+// Headings
+$headingFont: 'Source Sans Pro', Helvetica, sans-serif;
+$headingColor: #eee;
+$headingLineHeight: 1.2;
+$headingLetterSpacing: normal;
+$headingTextTransform: uppercase;
+$headingTextShadow: none;
+$headingFontWeight: 600;
+$heading1TextShadow: $headingTextShadow;
+
+$heading1Size: 2.5em;
+$heading2Size: 1.6em;
+$heading3Size: 1.3em;
+$heading4Size: 1.0em;
+
+$codeFont: monospace;
+
+// Links and actions
+$linkColor: #61afef;
+$linkColorHover: lighten( $linkColor, 15% );
+
+// Text selection
+$selectionBackgroundColor: #3E4452;
+$selectionColor: #dcdfe4;
+
+// Generates the presentation background, can be overridden
+// to return a background image or gradient
+@mixin bodyBackground() {
+	background: $backgroundColor;
+}
+
+// Change text colors against light slide backgrounds
+@include light-bg-text-color(#282c34);
+
+// Theme template ------------------------------
+@import "../template/theme";
+// ---------------------------------------------
