@@ -16,11 +16,12 @@ A [reveal.js](https://revealjs.com) theme based on the
     ```
 1. Copy the `onedark.css` file into your `reveal.js` project: and change the theme
     ```
-    cp onedark.css ~/path/to/your/reveal.js/project
+    cp onedark.css <path/to/your/reveal.js>/dist/theme/onedark.css
     ```
 1. Finally, replace the theme selection in the `index.html` of your project:
     ```html
-    <link rel="stylesheet" href="onedark.css" id="theme" />
+    <link rel="stylesheet" href="dist/theme/onedark.css" id="theme" />
+
     ```
 
 ## How to build?
